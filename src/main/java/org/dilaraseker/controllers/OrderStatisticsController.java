@@ -29,8 +29,10 @@ public class OrderStatisticsController {
         // Statistical calculations
         OrderStatisticsCalculator statisticsCalculator = new OrderStatisticsCalculator(selectedOrders);
         double totalAmount = statisticsCalculator.calculateTotalAmountForAllOrder();
+        Map<Integer, Double> totalAmountForEachOrder = statisticsCalculator.calculateTotalAmountForEachOrder();
 
         // View
+        orderStatisticsView.displayTotalAmountForEachOrder(totalAmountForEachOrder);
         orderStatisticsView.displayTotalAmount(totalAmount);
 
     }

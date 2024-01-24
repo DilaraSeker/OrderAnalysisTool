@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8638a9ef-bc77-40f7-8f30-209dd8192f1e" name="Changes" comment="Read order data from json file and convert to order object">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/views/OrderStatisticsView.java" afterDir="false" />
+    <list default="true" id="8638a9ef-bc77-40f7-8f30-209dd8192f1e" name="Changes" comment="Control calculation and showing statistics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dilaraseker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dilaraseker/views/OrderStatisticsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/views/OrderStatisticsView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -63,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706062245976</updated>
-      <workItem from="1706062247060" duration="1145000" />
+      <workItem from="1706062247060" duration="1503000" />
     </task>
     <task id="LOCAL-00001" summary="Add order json file">
       <option name="closed" value="true" />
@@ -89,7 +89,31 @@
       <option name="project" value="LOCAL" />
       <updated>1706062966617</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Calculate total amount">
+      <option name="closed" value="true" />
+      <created>1706063463971</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706063463971</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Show total amount">
+      <option name="closed" value="true" />
+      <created>1706063502073</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706063502073</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Control calculation and showing statistics">
+      <option name="closed" value="true" />
+      <created>1706063575559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706063575559</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +123,9 @@
     <MESSAGE value="Add order json file" />
     <MESSAGE value="Create order model" />
     <MESSAGE value="Read order data from json file and convert to order object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read order data from json file and convert to order object" />
+    <MESSAGE value="Calculate total amount" />
+    <MESSAGE value="Show total amount" />
+    <MESSAGE value="Control calculation and showing statistics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Control calculation and showing statistics" />
   </component>
 </project>

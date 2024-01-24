@@ -22,5 +22,13 @@ public class OrderStatisticsCalculator {
         }
         return totalAmount;
     }
+    // a. Sipariş numaralarına göre malların toplam tutarı
+    public Map<Integer, Double> calculateTotalAmountForEachOrder() {
+        return orders.stream()
+                .collect(Collectors.groupingBy(
+                        Order::getOrderNumber,
+                        Collectors.summingDouble(order -> order.getQuantity() * order.getUnitPrice())
+                ));
+    }
 
 }
