@@ -54,5 +54,20 @@ public class OrderStatisticsCalculator {
         double totalAmount = calculateTotalAmountForAllOrder();
         return totalAmount / orders.size();
     }
-
+    // Her bir ürünün toplam fiyatı (tüm siparişler içindeki toplam fiyat)
+    public Map<Integer, Double> calculateTotalPricePerProductForOrders() {
+        return orders.stream()
+                .collect(Collectors.groupingBy(
+                        Order::getProductNumber,
+                        Collectors.summingDouble(order -> order.getQuantity() * order.getUnitPrice())
+                ));
+    }
+    //  Her bir ürünün toplam sayısı (tüm siparişler içindeki toplam miktar)
+    public Map<Integer, Long> calculateTotalQuantityPerProductForOrders() {
+        return orders.stream()
+                .collect(Collectors.groupingBy(
+                        Order::getProductNumber,
+                        Collectors.summingLong(Order::getQuantity)
+                ));
+    }
 }
