@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8638a9ef-bc77-40f7-8f30-209dd8192f1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/orders.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="8638a9ef-bc77-40f7-8f30-209dd8192f1e" name="Changes" comment="Create order model">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/models/OrderDataReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +57,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706062245976</updated>
-      <workItem from="1706062247060" duration="388000" />
+      <workItem from="1706062247060" duration="644000" />
     </task>
+    <task id="LOCAL-00001" summary="Add order json file">
+      <option name="closed" value="true" />
+      <created>1706062756169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706062756169</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create order model">
+      <option name="closed" value="true" />
+      <created>1706062782619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706062782619</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add order json file" />
+    <MESSAGE value="Create order model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create order model" />
   </component>
 </project>
