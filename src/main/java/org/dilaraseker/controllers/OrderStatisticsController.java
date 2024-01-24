@@ -32,10 +32,12 @@ public class OrderStatisticsController {
         Map<Integer, Double> totalAmountForEachOrder = statisticsCalculator.calculateTotalAmountForEachOrder();
         Map<Integer, Double> averagePriceForEachOrder = statisticsCalculator.calculateAveragePriceForOrders();
         double averagePrice = statisticsCalculator.calculateAveragePrice();
+        Map<Integer, Double> averagePricePerProduct = statisticsCalculator.calculateAveragePricePerProductForOrders();
         // View
         orderStatisticsView.displayTotalAmountForEachOrder(totalAmountForEachOrder);
         orderStatisticsView.displayTotalAmount(totalAmount);
         orderStatisticsView.displayAveragePriceForOrders(averagePriceForEachOrder);
         orderStatisticsView.displayAveragePrice(averagePrice);
+        orderStatisticsView.displayAveragePricePerProduct(averagePricePerProduct);
     }
 }

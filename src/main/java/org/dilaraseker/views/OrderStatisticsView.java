@@ -23,4 +23,11 @@ public class OrderStatisticsView {
         System.out.println("   Tüm siparişlerdeki malların ortalama fiyatı: " + averagePrice + " TL");
         System.out.println();
     }
+    public void displayAveragePricePerProduct(Map<Integer, Double> averagePricePerProduct) {
+        System.out.println("c. Tüm siparişler için her bir ürünün ortalama fiyatı:");
+        averagePricePerProduct.forEach((productNumber, averagePrice) ->
+                System.out.println("   Mal Numarası: " + productNumber + ", Ortalama Fiyat: " + averagePrice + " TL"));
+        System.out.println();
+    }
+
 }

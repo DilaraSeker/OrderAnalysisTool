@@ -70,4 +70,15 @@ public class OrderStatisticsCalculator {
                         Collectors.summingLong(Order::getQuantity)
                 ));
     }
+    // c. Tüm siparişlerdeki bütün malların tek tek mal bazlı ortalama fiyatı
+    public Map<Integer, Double> calculateAveragePricePerProductForOrders() {
+        Map<Integer, Double> totalPricePerProduct = calculateTotalPricePerProductForOrders();
+        Map<Integer, Long> totalQuantityPerProduct = calculateTotalQuantityPerProductForOrders();
+
+        return totalPricePerProduct.entrySet().stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        entry -> entry.getValue() / totalQuantityPerProduct.get(entry.getKey())
+                ));
+    }
 }
