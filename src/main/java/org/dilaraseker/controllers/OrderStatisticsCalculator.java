@@ -81,4 +81,15 @@ public class OrderStatisticsCalculator {
                         entry -> entry.getValue() / totalQuantityPerProduct.get(entry.getKey())
                 ));
     }
+    // d. Tek tek mal bazlı, malların hangi siparişlerde kaç adet olduğunun çıktısı
+    public Map<Integer, Map<Integer, Long>> getProductCountPerOrder() {
+        return orders.stream()
+                .collect(Collectors.groupingBy(
+                        Order::getProductNumber,
+                        Collectors.groupingBy(
+                                Order::getOrderNumber,
+                                Collectors.summingLong(Order::getQuantity)
+                        )
+                ));
+    }
 }

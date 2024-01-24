@@ -29,5 +29,14 @@ public class OrderStatisticsView {
                 System.out.println("   Mal Numarası: " + productNumber + ", Ortalama Fiyat: " + averagePrice + " TL"));
         System.out.println();
     }
+    public void displayProductCountPerOrder(Map<Integer, Map<Integer, Long>> productCountPerOrder) {
+        System.out.println("d. Tek tek mal bazlı, malların hangi siparişlerde kaç adet olduğunun çıktısı:");
+        productCountPerOrder.forEach((productNumber, orderQuantityMap) -> {
+            System.out.println("   Mal Numarası: " + productNumber);
+            orderQuantityMap.forEach((orderNumber, quantity) ->
+                    System.out.println("    Sipariş Numarası: " + orderNumber + ", Adet: " + quantity));
+        });
+        System.out.println();
+    }
 
 }

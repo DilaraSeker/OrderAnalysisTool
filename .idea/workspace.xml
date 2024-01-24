@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8638a9ef-bc77-40f7-8f30-209dd8192f1e" name="Changes" comment="Calculate total price and quantity per product for all orders">
+    <list default="true" id="8638a9ef-bc77-40f7-8f30-209dd8192f1e" name="Changes" comment="Calculate average price per product for all orders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dilaraseker/controllers/OrderStatisticsController.java" afterDir="false" />
@@ -63,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706062245976</updated>
-      <workItem from="1706062247060" duration="2472000" />
+      <workItem from="1706062247060" duration="2604000" />
     </task>
     <task id="LOCAL-00001" summary="Add order json file">
       <option name="closed" value="true" />
@@ -145,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706064613660</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Calculate average price per product for all orders">
+      <option name="closed" value="true" />
+      <created>1706064771673</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706064771673</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +170,7 @@
     <MESSAGE value="Calculate total quantity for each order" />
     <MESSAGE value="Calculate average price for each orders and for all" />
     <MESSAGE value="Calculate total price and quantity per product for all orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculate total price and quantity per product for all orders" />
+    <MESSAGE value="Calculate average price per product for all orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calculate average price per product for all orders" />
   </component>
 </project>
