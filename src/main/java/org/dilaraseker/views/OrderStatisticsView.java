@@ -14,4 +14,13 @@ public class OrderStatisticsView {
         totalAmountForEachOrder.forEach((orderNumber, totalAmount) ->
                 System.out.println("   Sipariş Numarası: " + orderNumber + ", Toplam Tutar: " + totalAmount + " TL"));
     }
+    public void displayAveragePriceForOrders(Map<Integer, Double> averagePriceForEachOrder) {
+        System.out.println("b. Her sipariş numarası için bütün malların ortalama fiyatı:");
+        averagePriceForEachOrder.forEach((orderNumber, average) ->
+                System.out.println("   Sipariş Numarası: " + orderNumber + ", Ortalama Fiyat: " + average + " TL"));
+    }
+    public void displayAveragePrice (double averagePrice) {
+        System.out.println("   Tüm siparişlerdeki malların ortalama fiyatı: " + averagePrice + " TL");
+        System.out.println();
+    }
 }

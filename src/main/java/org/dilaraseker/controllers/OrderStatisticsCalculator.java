@@ -38,6 +38,21 @@ public class OrderStatisticsCalculator {
                         Collectors.summingLong(Order::getQuantity )
                 ));
     }
-
+    // b. Sipariş numaralarına göre  malların ortalama fiyatı
+    public Map<Integer, Double> calculateAveragePriceForOrders() {
+        Map<Integer, Double> totalAmountForEachOrder = calculateTotalAmountForEachOrder();
+        Map<Integer, Long> totalQuantityForEachOrder = calculateTotalQuantityForEachOrder();
+        Map<Integer, Double> result = totalAmountForEachOrder.entrySet().stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        entry -> entry.getValue() / totalQuantityForEachOrder.get(entry.getKey())
+                ));
+        return result;
+    }
+    // Tüm siparişlerin ortalama fiyatı
+    public double calculateAveragePrice() {
+        double totalAmount = calculateTotalAmountForAllOrder();
+        return totalAmount / orders.size();
+    }
 
 }
