@@ -1,0 +1,92 @@
+[
+  {
+    "Sipariş": 1000,
+    "Mal Numarası": 2000,
+    "Miktar": 12,
+    "Birim Fiyat (TL)": 100.51
+  },
+  {
+    "Sipariş": 1000,
+    "Mal Numarası": 2001,
+    "Miktar": 31,
+    "Birim Fiyat (TL)": 200
+  },
+  {
+    "Sipariş": 1000,
+    "Mal Numarası": 2002,
+    "Miktar": 22,
+    "Birim Fiyat (TL)": 150.86
+  },
+  {
+    "Sipariş": 1000,
+    "Mal Numarası": 2003,
+    "Miktar": 41,
+    "Birim Fiyat (TL)": 250
+  },
+  {
+    "Sipariş": 1000,
+    "Mal Numarası": 2004,
+    "Miktar": 55,
+    "Birim Fiyat (TL)": 244
+  },
+  {
+    "Sipariş": 1001,
+    "Mal Numarası": 2001,
+    "Miktar": 88,
+    "Birim Fiyat (TL)": 44.531
+  },
+  {
+    "Sipariş": 1001,
+    "Mal Numarası": 2002,
+    "Miktar": 121,
+    "Birim Fiyat (TL)": 88.11
+  },
+  {
+    "Sipariş": 1001,
+    "Mal Numarası": 2004,
+    "Miktar": 74,
+    "Birim Fiyat (TL)": 211
+  },
+  {
+    "Sipariş": 1001,
+    "Mal Numarası": 2002,
+    "Miktar": 14,
+    "Birim Fiyat (TL)": 88.11
+  },
+  {
+    "Sipariş": 1002,
+    "Mal Numarası": 2003,
+    "Miktar": 2,
+    "Birim Fiyat (TL)": 12.1
+  },
+  {
+    "Sipariş": 1002,
+    "Mal Numarası": 2004,
+    "Miktar": 3,
+    "Birim Fiyat (TL)": 22.3
+  },
+  {
+    "Sipariş": 1002,
+    "Mal Numarası": 2003,
+    "Miktar": 8,
+    "Birim Fiyat (TL)": 12.1
+  },
+  {
+    "Sipariş": 1002,
+    "Mal Numarası": 2002,
+    "Miktar": 16,
+    "Birim Fiyat (TL)": 94
+  },
+  {
+    "Sipariş": 1002,
+    "Mal Numarası": 2005,
+    "Miktar": 9,
+    "Birim Fiyat (TL)": 44.1
+  },
+  {
+    "Sipariş": 1002,
+    "Mal Numarası": 2006,
+    "Miktar": 19,
+    "Birim Fiyat (TL)": 90
+  }
+]
