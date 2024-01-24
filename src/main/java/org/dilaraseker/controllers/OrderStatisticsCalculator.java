@@ -30,5 +30,14 @@ public class OrderStatisticsCalculator {
                         Collectors.summingDouble(order -> order.getQuantity() * order.getUnitPrice())
                 ));
     }
+    // Sipariş numaralarına göre malların toplam miktarı
+    public Map<Integer, Long> calculateTotalQuantityForEachOrder() {
+        return orders.stream()
+                .collect(Collectors.groupingBy(
+                        Order::getOrderNumber,
+                        Collectors.summingLong(Order::getQuantity )
+                ));
+    }
+
 
 }
